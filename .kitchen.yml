@@ -31,8 +31,8 @@ platforms:
         key_id: <%= ENV['AWS_ACCESS_KEY_ID'] %>
         access_key: <%= ENV['AWS_SECRET_ACCESS_KEY'] %>
 
-network
-  -["forwarded_port", {guest: 80, host: 8080}]
+network:
+  -["forwarded_port", {guest:8080, host: 443}]
 
 verifier:
   name: inspec
